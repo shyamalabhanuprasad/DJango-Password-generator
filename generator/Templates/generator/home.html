@@ -1,0 +1,18 @@
+<h2>Password generator</h2>
+<form  action="{% url 'password' %}" >
+  <select name="length" values="numbers">
+    <option value="6">6</option>
+    <option value="8">8</option>
+    <option value="10">10</option>
+    <option value="12">12</option>
+  </select>
+  <br>
+  <input type="checkbox" name="uppercase" >  UPPER CASE
+  <br>
+  <input type="checkbox" name="special" > Special Character
+  <br>
+  <input type="checkbox" name="numbers" > numbers
+  <br>
+  <input type="submit"  value="generate password">
+
+</form>
