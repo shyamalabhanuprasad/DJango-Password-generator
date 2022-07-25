@@ -8,10 +8,10 @@ def home(request):
 
 def password(request):
     length = int(request.GET.get('length'))
-    characters = list('abcdefghijklmnopqrstuvwxyz')
+    characters = list('abcdefghijklmnopqrstuvwxyzz')
     thepassword =''
     if request.GET.get('uppercase'):
-        characters.extend(list('ABCDEFGHIJKLMNOPQRSTUVWXYZ'))
+        characters.extend(list('ABCDEFGHIJKLMNOPQRSTUVWXYZZ'))
 
     if request.GET.get('special'):
         characters.extend(list('!@#$%^&*()'))
